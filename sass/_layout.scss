@@ -1,3 +1,5 @@
+@use "base";
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -6,7 +8,7 @@
 
   min-height: 50rem;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: base.$bp-largest) {
     margin: 0;
     max-width: 100%;
     width: 100%;
@@ -23,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @media only screen and (max-width: $bp-smallest) {
+  @media only screen and (max-width: base.$bp-smallest) {
     flex-wrap: wrap;
     align-content: space-around;
     height: 11rem;
@@ -33,7 +35,7 @@
 .content {
   display: flex;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: base.$bp-medium) {
     flex-direction: column;
   }
 }
@@ -61,11 +63,11 @@
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: base.$bp-medium) {
     padding: 3rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: base.$bp-small) {
     flex-direction: column;
   }
 }
@@ -77,12 +79,12 @@
   flex: 0 0 60%;
   margin-right: 4.5rem;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: base.$bp-medium) {
     padding: 2rem;
     margin-right: 3rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: base.$bp-small) {
     margin-right: 0;
     margin-bottom: 3rem;
   }
